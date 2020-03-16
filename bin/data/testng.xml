@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="s1" verbose="1" >
+	<listeners> 
+		<listener class-name="utils.WebTestListener" /> 
+	</listeners>
+	<test name="test1">
+		<classes>
+			<class name="testCase.LoginCase"/>
+			<class name="testCase.SearchGoodsCase"/>
+			<class name="testCase.AddGoodsCartCase"/>
+			<class name="testCase.CartBuyCase"/>
+		</classes>
+	</test>
+</suite>
